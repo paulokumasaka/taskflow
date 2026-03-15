@@ -1,0 +1,17 @@
+-- Esquema PostgreSQL para TaskFlow
+
+CREATE TABLE IF NOT EXISTS users (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(120) NOT NULL,
+    email VARCHAR(120) UNIQUE NOT NULL,
+    password VARCHAR(128) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS tasks (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(200) NOT NULL,
+    description TEXT,
+    status VARCHAR(20) NOT NULL DEFAULT 'pending',
+    created_at TIMESTAMP WITHOUT TIME ZONE DEFAULT now(),
+    user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE
+);
