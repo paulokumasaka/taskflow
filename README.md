@@ -119,7 +119,7 @@ Exemplo de requisição:
 ## Como Executar o Projeto
 
 1. Clonar o repositório
-   git clone https://github.com/seu-usuario/taskflow.git
+   git clone https://github.com/paulokumasaka/taskflow
 2. Instalar dependências
    pip install -r requirements.txt
 3. Criar banco de dados PostgreSQL
