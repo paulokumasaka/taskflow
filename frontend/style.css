@@ -1,85 +1,92 @@
 body {
-    padding-top: 20px;
-    padding-bottom: 40px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
 }
 
 .completed {
-    text-decoration: line-through;
-    color: #6c757d;
+  text-decoration: line-through;
+  color: #6c757d;
 }
 
 .completed .task-title {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .task-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px;
-    border-bottom: 1px solid #dee2e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #dee2e6;
 }
 
 .task-item:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .task-content {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .task-title {
-    font-weight: 500;
-    margin-bottom: 4px;
+  font-weight: 500;
+  margin-bottom: 4px;
 }
 
 .task-description {
-    font-size: 0.9rem;
-    color: #6c757d;
-    margin-bottom: 4px;
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 4px;
 }
 
 .task-created {
-    font-size: 0.8rem;
-    color: #adb5bd;
+  font-size: 0.8rem;
+  color: #adb5bd;
 }
 
 .task-actions {
-    display: flex;
-    gap: 6px;
-    justify-content: flex-end;
+  display: flex;
+  gap: 6px;
+  justify-content: flex-end;
 }
 
 .task-actions button {
-    padding: 4px 8px;
-    font-size: 0.85rem;
+  padding: 4px 8px;
+  font-size: 0.85rem;
 }
 
 .alert {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-h1, h5 {
-    color: #212529;
+h1,
+h5 {
+  color: #212529;
 }
 
 .card {
-    border: none;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .btn {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 form .mb-3 label {
-    font-weight: 500;
-    margin-bottom: 8px;
+  font-weight: 500;
+  margin-bottom: 8px;
 }
 
 #tasksLink {
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 10px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.task-title {
+  cursor: pointer;
 }
