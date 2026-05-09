@@ -242,7 +242,7 @@ function attachTaskButtons() {
   document.querySelectorAll(".delete-btn").forEach((btn) => {
     btn.addEventListener("click", async (e) => {
       e.preventDefault();
-      if (!confirm("Tem certeza de que deseja excluir esta tarefa?")) {
+      if (!confirm("A tarefa será removida do sistema. Deseja continuar?")) {
         return;
       }
 
